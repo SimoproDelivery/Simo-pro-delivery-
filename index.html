@@ -1,604 +1,1180 @@
-
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Simo Pro Delivery | Livraison rapide à Marrakech</title>
-  <meta name="description" content="Simo Pro Delivery à Marrakech : livraison de repas, médicaments, colis et documents. Service rapide et fiable 24h/24 et 7j/7. Contactez-nous sur WhatsApp.">
-  <meta name="keywords" content="Simo Pro Delivery, delivery Marrakech, livraison Marrakech, livreur Marrakech, توصيل مراكش, عامل توصيل مراكش">
-  <meta name="author" content="Simo Pro Delivery">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#07111f">
-  <link rel="canonical" href="https://simoprodelivery.github.io/SimoproDelivery-/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:title" content="Simo Pro Delivery - Marrakech">
-  <meta property="og:description" content="Livraison rapide et fiable à Marrakech. Contactez-nous sur WhatsApp.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://simoprodelivery.github.io/SimoproDelivery-/">
+<!-- SEO Title optimizing for "Delivery" and "Livraison" -->
+<title>Simo Pro Delivery | Livraison Marrakech | Food & Package Delivery</title>
 
-  <style>
-    :root {
-      --bg: #050a12;
-      --panel: #0c1727;
-      --blue: #12a9ff;
-      --blue2: #0066ff;
-      --white: #f5f8ff;
-      --muted: #a9b7ca;
-      --border: rgba(255,255,255,.1);
-    }
+<meta name="description"
+content="Simo Pro Delivery Marrakech: Fast delivery service for meals, pharmacy, packages & documents. Express Livraison 24/7 in Marrakech. Call 0703394963.">
 
-    * { box-sizing: border-box; }
+<!-- Targeted Keywords -->
+<meta name="keywords"
+content="delivery, livraison, delivery marrakech, livraison marrakech, food delivery marrakech, express delivery, livreur marrakech, توصيل مراكش, simo pro delivery">
 
-    html { scroll-behavior: smooth; }
+<meta name="author" content="Simo Pro Delivery">
+<meta name="robots" content="index, follow">
 
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--white);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-    }
+<link rel="canonical" href="https://simoprodelivery.github.io/SimoproDelivery-/">
 
-    a { color: inherit; text-decoration: none; }
+<!-- =========================
+     GOOGLE LOCAL BUSINESS SEO
+========================= -->
 
-    img { max-width: 100%; display: block; }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DeliveryService",
+  "name": "Simo Pro Delivery",
+  "alternateName": ["SPD", "Simo Delivery Marrakech"],
+  "url": "https://simoprodelivery.github.io/SimoproDelivery-/",
+  "logo": "https://simoprodelivery.github.io/SimoproDelivery-/file_000000000cd081f493abbfca117829e2.png",
+  "telephone": "+212703394963",
+  "description": "Professional express delivery and livraison service in Marrakech.",
+  "knowsLanguage": ["fr", "ar", "en", "es"],
+  "areaServed": {
+    "@type": "City",
+    "name": "Marrakech"
+  },
+  "serviceType": [
+    "Delivery",
+    "Livraison",
+    "Food Delivery",
+    "Livraison de repas",
+    "Express Package Delivery"
+  ],
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
 
-    .container {
-      width: min(1120px, 92%);
-      margin: auto;
-    }
+<style>
 
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(5,10,18,.94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-    }
+/* =========================
+   GENERAL
+========================= */
 
-    .nav {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial,sans-serif;
+}
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 18px;
-      font-weight: 800;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    .brand img {
-      width: 54px;
-      height: 54px;
-      object-fit: contain;
-      border-radius: 12px;
-    }
+body{
+  background:#030914;
+  color:#fff;
+  line-height:1.7;
+}
 
-    .brand span { color: var(--blue); }
+/* =========================
+   HEADER
+========================= */
 
-    .navlinks {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      flex-wrap: wrap;
-      font-size: 14px;
-      color: var(--muted);
-    }
+header{
+  background:#020711;
+  padding:12px 5%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  border-bottom:1px solid #124a78;
+}
 
-    .navlinks a:hover { color: var(--blue); }
+.logo img{
+  width:72px;
+  height:72px;
+  object-fit:contain;
+  display:block;
+}
 
-    .languages {
-      display: flex;
-      gap: 5px;
-    }
+nav{
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
 
-    .languages button {
-      border: 1px solid var(--border);
-      color: white;
-      background: #111e30;
-      padding: 8px 10px;
-      border-radius: 9px;
-      cursor: pointer;
-    }
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+  transition:.3s;
+}
 
-    .languages button.active {
-      background: var(--blue2);
-      border-color: var(--blue);
-    }
+nav a:hover{
+  color:#12a9ff;
+}
 
-    .hero {
-      padding: 75px 0 65px;
-      background:
-        radial-gradient(ellipse at 75% 15%, rgba(0,119,255,.19), transparent 48%),
-        linear-gradient(180deg, #081322, var(--bg));
-    }
+/* =========================
+   LANGUAGE
+========================= */
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      align-items: center;
-      gap: 45px;
-    }
+.lang{
+  display:flex;
+  gap:4px;
+  border:1px solid #12a9ff;
+  border-radius:30px;
+  padding:4px;
+  flex-wrap:wrap;
+}
 
-    .eyebrow {
-      display: inline-block;
-      padding: 7px 13px;
-      border: 1px solid rgba(18,169,255,.35);
-      background: rgba(18,169,255,.08);
-      color: #7ed0ff;
-      border-radius: 30px;
-      font-size: 13px;
-      font-weight: bold;
-    }
+.lang button{
+  border:0;
+  background:transparent;
+  color:#fff;
+  padding:6px 10px;
+  border-radius:22px;
+  cursor:pointer;
+  font-size:13px;
+}
 
-    h1 {
-      font-size: clamp(36px, 5.5vw, 62px);
-      line-height: 1.12;
-      margin: 22px 0;
-      letter-spacing: -1.5px;
-    }
+.lang button.active{
+  background:#079fea;
+}
 
-    h1 span, .blue { color: var(--blue); }
+/* =========================
+   HERO
+========================= */
 
-    .hero p {
-      color: var(--muted);
-      font-size: 17px;
-      max-width: 600px;
-    }
+.hero{
+  min-height:88vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:70px 20px;
 
-    .hero-logo {
-      padding: 12px;
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      background: linear-gradient(145deg, #101d30, #050a12);
-      box-shadow: 0 25px 80px rgba(0,0,0,.35);
-    }
+  background:
+  radial-gradient(
+    circle at center,
+    #0d4776 0%,
+    #06172b 45%,
+    #020711 100%
+  );
+}
 
-    .hero-logo img {
-      width: 100%;
-      border-radius: 15px;
-    }
+.hero-content{
+  width:100%;
+  max-width:1000px;
+}
 
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 26px;
-    }
+.hero-logo{
+  margin-bottom:25px;
+}
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 13px 20px;
-      border-radius: 12px;
-      font-weight: 800;
-      transition: .2s;
-    }
+.hero-logo img{
+  width:170px;
+  max-width:55vw;
+  filter:drop-shadow(0 0 20px rgba(0,160,255,.35));
+}
 
-    .btn:hover { transform: translateY(-2px); }
+.badge{
+  display:inline-block;
+  border:1px solid #159fe9;
+  color:#22b3ff;
+  padding:9px 20px;
+  border-radius:30px;
+  margin-bottom:25px;
+  font-size:17px;
+}
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--blue), var(--blue2));
-      color: white;
-    }
+.hero h1{
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.1;
+  margin-bottom:20px;
+}
 
-    .btn-secondary {
-      border: 1px solid var(--border);
-      background: #111c2c;
-    }
+.hero h1 span{
+  color:#12a8ff;
+}
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-top: 30px;
-    }
+.hero p{
+  max-width:850px;
+  margin:0 auto 30px;
+  font-size:20px;
+  color:#d6e4f1;
+}
 
-    .stat {
-      background: rgba(255,255,255,.035);
-      border: 1px solid var(--border);
-      border-radius: 13px;
-      padding: 13px;
-    }
+/* =========================
+   BUTTONS
+========================= */
 
-    .stat strong {
-      display: block;
-      color: var(--blue);
-      font-size: 19px;
-    }
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
 
-    .stat small { color: var(--muted); }
+.btn{
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  display:inline-block;
+  transition:.3s;
+}
 
-    section { padding: 70px 0; }
+.btn:hover{
+  transform:translateY(-3px);
+}
 
-    .section-head {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 35px;
-    }
+.primary{
+  background:#079fea;
+  color:#fff;
+  box-shadow:0 0 20px rgba(0,160,255,.25);
+}
 
-    .section-head h2 {
-      font-size: clamp(28px, 4vw, 40px);
-      margin: 0 0 10px;
-    }
+.secondary{
+  border:1px solid #159fe9;
+  color:#fff;
+}
 
-    .section-head p { color: var(--muted); }
+/* =========================
+   GOOGLE REVIEW BUTTON
+========================= */
 
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
+.google-review{
+  display:inline-block;
+  margin-top:12px;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  background:#fff;
+  color:#111;
+  border:1px solid #ddd;
+  transition:.3s;
+}
 
-    .service {
-      background: linear-gradient(145deg, #101e31, #09111e);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      overflow: hidden;
-      transition: .25s;
-    }
+.google-review:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 25px rgba(255,255,255,.12);
+}
 
-    .service:hover {
-      transform: translateY(-5px);
-      border-color: rgba(18,169,255,.55);
-    }
+/* =========================
+   SECTIONS
+========================= */
 
-    .service img {
-      width: 100%;
-      height: 170px;
-      object-fit: cover;
-      background: #101e31;
-    }
+section{
+  padding:75px 6%;
+}
 
-    .service-content { padding: 18px; }
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
 
-    .service-icon { font-size: 27px; }
+.title h2{
+  font-size:38px;
+  margin-bottom:8px;
+}
 
-    .service h3 { margin: 5px 0; font-size: 19px; }
+.title p{
+  color:#aebed0;
+  font-size:17px;
+}
 
-    .service p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
+/* =========================
+   MAIN SERVICE IMAGE
+========================= */
 
-    .promise {
-      background:
-        radial-gradient(ellipse at 50% 0%, rgba(0,102,255,.15), transparent 65%),
-        #08111f;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
+.service-main{
+  max-width:1050px;
+  margin:auto;
+  border-radius:25px;
+  overflow:hidden;
+  border:1px solid #145b8e;
+  box-shadow:0 0 35px rgba(0,140,255,.18);
+}
 
-    .promise-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
+.service-main img{
+  width:100%;
+  height:auto;
+  display:block;
+}
 
-    .promise-card {
-      padding: 24px;
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.025);
-      border-radius: 16px;
-      text-align: center;
-    }
+/* =========================
+   SERVICES CARDS
+========================= */
 
-    .promise-card .icon { font-size: 30px; }
+.services{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(220px,1fr));
 
-    .promise-card h3 { margin: 10px 0 5px; }
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
+}
 
-    .promise-card p { color: var(--muted); margin: 0; }
+.card{
+  background:
+  linear-gradient(
+    145deg,
+    #0b2946,
+    #061323
+  );
 
-    .contact-box {
-      text-align: center;
-      padding: 38px 22px;
-      border: 1px solid rgba(18,169,255,.28);
-      border-radius: 22px;
-      background: linear-gradient(145deg, #101f34, #07101c);
-    }
+  padding:30px 20px;
+  border-radius:20px;
+  text-align:center;
 
-    .phone {
-      color: var(--blue);
-      font-size: clamp(26px, 5vw, 38px);
-      font-weight: 900;
-      direction: ltr;
-      display: inline-block;
-      margin: 12px 0;
-    }
+  border:1px solid #164a70;
 
-    footer {
-      padding: 25px 0;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      text-align: center;
-      font-size: 13px;
-    }
+  transition:.3s;
+}
 
-    .whatsapp-float {
-      position: fixed;
-      z-index: 20;
-      bottom: 20px;
-      right: 18px;
-      background: #20c76a;
-      color: white;
-      font-weight: 900;
-      padding: 13px 17px;
-      border-radius: 40px;
-      box-shadow: 0 8px 30px rgba(0,0,0,.4);
-    }
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#16aaff;
+  box-shadow:0 10px 30px rgba(0,150,255,.12);
+}
 
-    [dir="rtl"] .whatsapp-float {
-      right: auto;
-      left: 18px;
-    }
+.icon{
+  font-size:48px;
+  margin-bottom:12px;
+}
 
-    [dir="rtl"] body { font-family: Arial, Tahoma, sans-serif; }
+.card h3{
+  font-size:21px;
+  margin-bottom:8px;
+}
 
-    @media (max-width: 850px) {
-      .hero-grid { grid-template-columns: 1fr; gap: 30px; }
-      .hero { padding-top: 45px; }
-      .hero-logo { max-width: 500px; margin: auto; }
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-      .nav { justify-content: center; }
-      .navlinks { justify-content: center; }
-    }
+.card p{
+  color:#b7c8d8;
+}
 
-    @media (max-width: 480px) {
-      .services-grid, .promise-grid { grid-template-columns: 1fr; }
-      .stats { gap: 6px; }
-      .stat { padding: 10px 6px; }
-      .stat strong { font-size: 16px; }
-      .stat small { font-size: 11px; }
-      .brand { font-size: 16px; }
-      .navlinks { gap: 12px; }
-    }
-  </style>
+/* =========================
+   MAP SECTION
+========================= */
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Simo Pro Delivery",
-    "description": "Service de livraison de repas, médicaments, colis et documents à Marrakech.",
-    "url": "https://simoprodelivery.github.io/SimoproDelivery-/",
-    "telephone": "+212703394963",
-    "areaServed": {
-      "@type": "City",
-      "name": "Marrakech"
-    },
-    "availableLanguage": ["Arabic", "French", "English"]
+.map-section{
+  background:
+  linear-gradient(
+    180deg,
+    #030914,
+    #06182b
+  );
+}
+
+.map-box{
+  max-width:1050px;
+  margin:auto;
+  border-radius:25px;
+  overflow:hidden;
+  border:1px solid #146096;
+  box-shadow:0 0 35px rgba(0,150,255,.18);
+}
+
+.map-box img{
+  width:100%;
+  display:block;
+  height:auto;
+}
+
+/* =========================
+   SLOGAN
+========================= */
+
+.slogan{
+  text-align:center;
+  padding:60px 20px;
+
+  background:
+  radial-gradient(
+    circle,
+    #0b3d67,
+    #030914
+  );
+}
+
+.slogan h2{
+  font-size:clamp(30px,5vw,52px);
+  color:#fff;
+}
+
+.slogan h2 span{
+  color:#12aaff;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+  text-align:center;
+  background:#030914;
+}
+
+.about-box{
+  max-width:850px;
+  margin:auto;
+  color:#c7d5e2;
+  font-size:18px;
+}
+
+/* =========================
+   SEO TEXT
+========================= */
+
+.seo-text{
+  background:#06182b;
+  text-align:center;
+}
+
+.seo-text .about-box{
+  max-width:950px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+  background:
+  linear-gradient(
+    135deg,
+    #0a3153,
+    #041020
+  );
+
+  text-align:center;
+}
+
+.phone{
+  font-size:34px;
+  font-weight:bold;
+  margin:20px 0;
+}
+
+.phone a{
+  color:#16aaff;
+  text-decoration:none;
+}
+
+.whatsapp{
+  display:inline-block;
+  background:#16aaff;
+  color:#fff;
+  padding:14px 30px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
+  box-shadow:0 0 20px rgba(0,170,255,.2);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background:#020711;
+  text-align:center;
+  padding:25px;
+  color:#91a4b8;
+  border-top:1px solid #123b61;
+}
+
+footer p{
+  margin:5px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+  header{
+    flex-direction:column;
+    padding:10px;
   }
-  </script>
+
+  .logo img{
+    width:68px;
+    height:68px;
+  }
+
+  nav{
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  nav a{
+    font-size:13px;
+  }
+
+  .hero{
+    min-height:80vh;
+    padding:55px 18px;
+  }
+
+  .hero-logo img{
+    width:145px;
+  }
+
+  .hero h1{
+    font-size:42px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .badge{
+    font-size:15px;
+  }
+
+  section{
+    padding:55px 18px;
+  }
+
+  .title h2{
+    font-size:32px;
+  }
+
+  .phone{
+    font-size:27px;
+  }
+
+}
+
+/* =========================
+   ARABIC
+========================= */
+
+[dir="rtl"] body{
+  text-align:right;
+}
+
+[dir="rtl"] .hero,
+[dir="rtl"] .title,
+[dir="rtl"] .card,
+[dir="rtl"] .about,
+[dir="rtl"] .seo-text,
+[dir="rtl"] .contact,
+[dir="rtl"] .slogan,
+[dir="rtl"] footer{
+  text-align:center;
+}
+
+</style>
+
 </head>
 
+
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="#home">
-        <img src="IMG_٢٠٢٦١٠٢٣.png" alt="Logo Simo Pro Delivery">
-        <div>SIMO PRO <span>DELIVERY</span></div>
-      </a>
 
-      <nav class="navlinks" aria-label="Main navigation">
-        <a href="#home" data-i18n="navHome">Accueil</a>
-        <a href="#services" data-i18n="navServices">Services</a>
-        <a href="#about" data-i18n="navAbout">Pourquoi nous</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-      </nav>
+<header>
 
-      <div class="languages" aria-label="Language">
-        <button class="active" type="button" data-lang="fr">FR</button>
-        <button type="button" data-lang="ar">AR</button>
-        <button type="button" data-lang="en">EN</button>
-      </div>
-    </div>
-  </header>
+<div class="logo">
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow" data-i18n="eyebrow">🚴 Livraison rapide à Marrakech</span>
-          <h1 data-i18n="heroTitle">Votre livraison, <span>notre priorité.</span></h1>
-          <p data-i18n="heroText">
-            Simo Pro Delivery vous accompagne pour la livraison de repas,
-            médicaments, colis et documents à Marrakech.
-            Rapide, fiable et toujours près de vous.
-          </p>
+<img
+src="file_000000000cd081f493abbfca117829e2.png"
+alt="Simo Pro Delivery Marrakech">
 
-          <div class="actions">
-            <a class="btn btn-primary" href="https://wa.me/212703394963?text=Bonjour%20Simo%20Pro%20Delivery" target="_blank" rel="noopener" data-i18n="orderBtn">💬 Commander sur WhatsApp</a>
-            <a class="btn btn-secondary" href="#services" data-i18n="servicesBtn">Découvrir nos services</a>
-          </div>
+</div>
 
-          <div class="stats">
-            <div class="stat">
-              <strong>24/7</strong>
-              <small data-i18n="stat1">Disponibilité</small>
-            </div>
-            <div class="stat">
-              <strong>Marrakech</strong>
-              <small data-i18n="stat2">Notre zone de service</small>
-            </div>
-            <div class="stat">
-              <strong>4</strong>
-              <small data-i18n="stat3">Types de livraison</small>
-            </div>
-          </div>
-        </div>
 
-        <div class="hero-logo">
-          <img src="IMG_٢٠٢٦١٠٢٣.png" alt="Simo Pro Delivery - SPD Marrakech">
-        </div>
-      </div>
-    </section>
+<nav>
 
-    <section id="services">
-      <div class="container">
-        <div class="section-head">
-          <h2 data-i18n="servicesTitle">Nos services</h2>
-          <p data-i18n="servicesIntro">Un service de livraison pratique et fiable à Marrakech.</p>
-        </div>
+<a href="#home"
+data-fr="Accueil"
+data-ar="الرئيسية"
+data-en="Home"
+data-es="Inicio">
+Accueil
+</a>
 
-        <div class="services-grid">
-          <article class="service">
-            <img src="images/file_00000000fe2081f591f7756c5f415a14.png" alt="Livraison de repas à Marrakech" loading="lazy">
-            <div class="service-content">
-              <div class="service-icon">🍔</div>
-              <h3 data-i18n="foodTitle">Repas et courses</h3>
-              <p data-i18n="foodText">Vos commandes livrées à votre adresse.</p>
-            </div>
-          </article>
+<a href="#services"
+data-fr="Nos services"
+data-ar="خدماتنا"
+data-en="Our Services"
+data-es="Servicios">
+Nos services
+</a>
 
-          <article class="service">
-            <img src="images/file_00000000a12c81f5804827c4b67309a.png" alt="Livraison de médicaments" loading="lazy">
-            <div class="service-content">
-              <div class="service-icon">💊</div>
-              <h3 data-i18n="medTitle">Médicaments</h3>
-              <p data-i18n="medText">Un service de livraison pratique pour vos besoins.</p>
-            </div>
-          </article>
+<a href="#map"
+data-fr="Marrakech"
+data-ar="مراكش"
+data-en="Marrakech"
+data-es="Marrakech">
+Marrakech
+</a>
 
-          <article class="service">
-            <img src="images/file_00000000ab2481f5b854773c6c10e86f.png" alt="Livraison de colis à Marrakech" loading="lazy">
-            <div class="service-content">
-              <div class="service-icon">📦</div>
-              <h3 data-i18n="parcelTitle">Colis et objets</h3>
-              <p data-i18n="parcelText">Envoi et livraison de colis et petits paquets.</p>
-            </div>
-          </article>
+<a href="#about"
+data-fr="À propos"
+data-ar="من نحن"
+data-en="About Us"
+data-es="Sobre nosotros">
+À propos
+</a>
 
-          <article class="service">
-            <img src="images/IMG_١٧٤٥٣٨_٢٠٢٦١٠١٧.jpg" alt="Livraison de documents" loading="lazy">
-            <div class="service-content">
-              <div class="service-icon">📄</div>
-              <h3 data-i18n="docTitle">Documents</h3>
-              <p data-i18n="docText">Transport de documents et d'affaires importantes.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+<a href="#contact"
+data-fr="Contact"
+data-ar="اتصل بنا"
+data-en="Contact"
+data-es="Contacto">
+Contact
+</a>
 
-    <section class="promise" id="about">
-      <div class="container">
-        <div class="section-head">
-          <h2 data-i18n="whyTitle">Pourquoi choisir Simo Pro Delivery ?</h2>
-          <p data-i18n="whyIntro">Un service local, avec une communication simple et directe.</p>
-        </div>
+</nav>
 
-        <div class="promise-grid">
-          <div class="promise-card">
-            <div class="icon">⚡</div>
-            <h3 data-i18n="fastTitle">Rapidité</h3>
-            <p data-i18n="fastText">Nous faisons de notre mieux pour livrer rapidement.</p>
-          </div>
-          <div class="promise-card">
-            <div class="icon">📍</div>
-            <h3 data-i18n="localTitle">À Marrakech</h3>
-            <p data-i18n="localText">Un service de proximité dans notre zone de livraison.</p>
-          </div>
-          <div class="promise-card">
-            <div class="icon">🤝</div>
-            <h3 data-i18n="easyTitle">Commande facile</h3>
-            <p data-i18n="easyText">Envoyez votre localisation directement sur WhatsApp.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="contact-box">
-          <div class="section-head">
-            <h2 data-i18n="contactTitle">Besoin d'une livraison ?</h2>
-            <p data-i18n="contactText">Contactez-nous directement. Envoyez votre localisation sur WhatsApp pour commencer.</p>
-          </div>
+<div class="lang">
 
-          <a class="phone" href="tel:+212703394963">0703394963</a>
+<button id="frBtn" class="active" onclick="setLang('fr')">🇫🇷 FR</button>
+<button id="arBtn" onclick="setLang('ar')">🇲🇦 AR</button>
+<button id="enBtn" onclick="setLang('en')">🇬🇧 EN</button>
+<button id="esBtn" onclick="setLang('es')">🇪🇸 ES</button>
 
-          <div class="actions" style="justify-content:center">
-            <a class="btn btn-primary" href="https://wa.me/212703394963?text=Bonjour%2C%20je%20souhaite%20une%20livraison%20%C3%A0%20Marrakech." target="_blank" rel="noopener" data-i18n="whatsappBtn">💬 Contacter sur WhatsApp</a>
-            <a class="btn btn-secondary" href="tel:+212703394963" data-i18n="callBtn">📞 Appeler</a>
-          </div>
-          <p style="color:var(--muted);margin-top:22px" data-i18n="hours">Disponible 24h/24 et 7j/7</p>
-        </div>
-      </div>
-    </section>
-  </main>
+</div>
 
-  <footer>
-    <div class="container">
-      <p>© <span id="year"></span> Simo Pro Delivery · Marrakech</p>
-      <p data-i18n="footerText">Rapide • Fiable • Toujours à vos côtés</p>
-    </div>
-  </footer>
+</header>
 
-  <a class="whatsapp-float" href="https://wa.me/212703394963" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp ↗</a>
 
-  <script>
-    const translations = {
-      fr: {
-        pageTitle: "Simo Pro Delivery | Livraison rapide à Marrakech",
-        navHome: "Accueil", navServices: "Services", navAbout: "Pourquoi nous", navContact: "Contact",
-        eyebrow: "🚴 Livraison rapide à Marrakech",
-        heroTitle: 'Votre livraison, <span>notre priorité.</span>',
-        heroText: "Simo Pro Delivery vous accompagne pour la livraison de repas, médicaments, colis et documents à Marrakech. Rapide, fiable et toujours près de vous.",
-        orderBtn: "💬 Commander sur WhatsApp", servicesBtn: "Découvrir nos services",
-        stat1: "Disponibilité", stat2: "Notre zone de service", stat3: "Types de livraison",
-        servicesTitle: "Nos services", servicesIntro: "Un service de livraison pratique et fiable à Marrakech.",
-        foodTitle: "Repas et courses", foodText: "Vos commandes livrées à votre adresse.",
-        medTitle: "Médicaments", medText: "Un service de livraison pratique pour vos besoins.",
-        parcelTitle: "Colis et objets", parcelText: "Envoi et livraison de colis et petits paquets.",
-        docTitle: "Documents", docText: "Transport de documents et d'affaires importantes.",
-        whyTitle: "Pourquoi choisir Simo Pro Delivery ?", whyIntro: "Un service local, avec une communication simple et directe.",
-        fastTitle: "Rapidité", fastText: "Nous faisons de notre mieux pour livrer rapidement.",
-        localTitle: "À Marrakech", localText: "Un service de proximité dans notre zone de livraison.",
-        easyTitle: "Commande facile", easyText: "Envoyez votre localisation directement sur WhatsApp.",
-        contactTitle: "Besoin d'une livraison ?", contactText: "Contactez-nous directement. Envoyez votre localisation sur WhatsApp pour commencer.",
-        whatsappBtn: "💬 Contacter sur WhatsApp", callBtn: "📞 Appeler",
-        hours: "Disponible 24h/24 et 7j/7", footerText: "Rapide • Fiable • Toujours à vos côtés"
-      },
-      ar: {
-        pageTitle: "سيمو برو دليفري | توصيل سريع في مراكش",
-        navHome: "الرئيسية", navServices: "خدماتنا", navAbout: "لماذا نحن", navContact: "اتصل بنا",
-        eyebrow: "🚴 توصيل سريع في مراكش",
-        heroTitle: 'التوصيل ديالك، <span>أولويتنا.</span>',
-        heroText: "Simo Pro Delivery خدمة توصيل في مراكش للمأكولات والأدوية والطرود والوثائق. السرعة والثقة والتواصل المباشر مع الزبون.",
-        orderBtn: "💬 طلب عبر واتساب", servicesBtn: "اكتشف خدماتنا",
-        stat1: "التوفر", stat2: "منطقة الخدمة", stat3: "أنواع التوصيل",
-        servicesTitle: "خدماتنا", servicesIntro: "خدمة توصيل عملية وموثوقة في مراكش.",
-        foodTitle: "المأكولات والمشتريات", foodText: "نوصلو الطلبات حتى للعنوان ديالك.",
-        medTitle: "الأدوية", medText: "خدمة توصيل لتسهيل قضاء الأغراض ديالك.",
-        parcelTitle: "الطرود والأمانات", parcelText: "توصيل الطرود والأغراض الصغيرة.",
-        docTitle: "الوثائق", docText: "نقل الوثائق والأمانات المهمة.",
-        whyTitle: "علاش تختار Simo Pro Delivery؟", whyIntro: "خدمة محلية وتواصل سهل ومباشر.",
-        fastTitle: "السرعة", fastText: "كنبذلو جهدنا باش نوصلو الطلبات بسرعة.",
-        localTitle: "في مراكش", localText: "خدمة قريبة منكم داخل منطقة التوصيل.",
-        easyTitle: "طلب سهل", easyText: "صيفط اللوكيليزاسيون مباشرة عبر واتساب.",
-        contactTitle: "بغيتي شي توصيل؟", contactText: "تواصل معانا مباشرة وصيفط اللوكيليزاسيون ديالك عبر واتساب.",
-        whatsappBtn: "💬 تواصل عبر واتساب", callBtn: "📞 اتصل بنا",
-        hours: "متوفرين 24/24 و7/7", footerText: "سريع • موثوق • Simo ديما قريب منكم"
-      },
-      en: {
-        pageTitle: "Simo Pro Delivery | Fast Delivery in Marrakech",
-        navHome: "Home", navServices: "Services", navAbout: "Why us", navContact: "Contact",
-        eyebrow: "🚴 Fast delivery in Marrakech",
-        heroTitle: 'Your delivery, <span>our priority.</span>',
-        heroText: "Simo Pro Delivery offers delivery of meals, medicines, parcels and documents in Marrakech. Fast, reliable and always close to you.",
-        orderBtn: "💬 Order on WhatsApp", servicesBtn: "Explore services",
-        stat1: "Availability", stat2: "Service area", stat3: "Delivery types",
-        servicesTitle: "Our services", servicesIntro: "Convenient and reli
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-logo">
+
+<img
+src="file_000000000cd081f493abbfca117829e2.png"
+alt="SPD Simo Pro Delivery Marrakech">
+
+</div>
+
+
+<div class="badge">
+
+<span
+data-fr="🚴 Express Delivery & Livraison rapide à Marrakech"
+data-ar="🚴 توصيل سريع وموثوق في مراكش"
+data-en="🚴 Fast Delivery & Express Livraison in Marrakech"
+data-es="🚴 Entrega rápida y confiable en Marrakech">
+
+🚴 Express Delivery & Livraison rapide à Marrakech
+
+</span>
+
+</div>
+
+
+<h1>
+
+Simo Pro <span>Delivery</span>
+
+</h1>
+
+
+<p>
+
+<span
+data-fr="Service de livraison rapide (Delivery & Livraison) pour vos repas, médicaments, documents et colis."
+data-ar="نوصل طعامك، أدويتك، وثائقك وطرودك بسرعة واحترافية."
+data-en="Fast delivery and express livraison service for your meals, medicine, documents, and packages."
+data-es="Entregamos sus comidas, medicamentos, documentos y paquetes con rapidez y profesionalismo.">
+
+Service de livraison rapide (Delivery & Livraison) pour vos repas, médicaments, documents et colis.
+
+</span>
+
+</p>
+
+
+<div class="buttons">
+
+<a
+class="btn primary"
+href="#contact">
+
+<span
+data-fr="📞 Commander maintenant"
+data-ar="📞 اطلب التوصيل"
+data-en="📞 Order Now"
+data-es="📞 Pedir ahora">
+
+📞 Commander maintenant
+
+</span>
+
+</a>
+
+
+<a
+class="btn secondary"
+href="https://wa.me/212703394963"
+target="_blank"
+rel="noopener">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+
+<a
+class="google-review"
+href="https://g.page/r/CdU8NoTJGz4kECE/review"
+target="_blank"
+rel="noopener"
+data-fr="⭐ Évaluez-nous sur Google"
+data-ar="⭐ قيّمنا على Google"
+data-en="⭐ Review us on Google"
+data-es="⭐ Valóranos en Google">
+
+⭐ Évaluez-nous sur Google
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="title">
+
+<h2
+data-fr="Nos services de livraison"
+data-ar="خدماتنا"
+data-en="Our Delivery Services"
+data-es="Nuestros Servicios">
+
+Nos services de livraison
+
+</h2>
+
+<p
+data-fr="Simo Pro Delivery est toujours près de vous à Marrakech"
+data-ar="Simo ديما قريب منكم"
+data-en="Simo Pro Delivery is always near you in Marrakech"
+data-es="Simo Pro Delivery siempre cerca de ti">
+
+Simo Pro Delivery est toujours près de vous à Marrakech
+
+</p>
+
+</div>
+
+
+<div class="service-main">
+
+<img
+src="file_00000000fe2081f591f7756c5f415a14.png"
+alt="Simo Pro Delivery - Livraison de repas à Marrakech">
+
+</div>
+
+
+<br><br>
+
+
+<div class="services">
+
+
+<div class="card">
+
+<div class="icon">🍔</div>
+
+<h3
+data-fr="Livraison de repas"
+data-ar="توصيل الطعام"
+data-en="Food Delivery"
+data-es="Comida a domicilio">
+
+Livraison de repas
+
+</h3>
+
+<p
+data-fr="Vos repas préférés livrés rapidement (Food Delivery)."
+data-ar="وجباتك المفضلة توصلك بسرعة."
+data-en="Your favorite meals delivered quickly."
+data-es="Tus comidas favoritas entregadas rápidamente.">
+
+Vos repas préférés livrés rapidement (Food Delivery).
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💊</div>
+
+<h3
+data-fr="Livraison de médicaments"
+data-ar="توصيل الأدوية"
+data-en="Medicine Delivery"
+data-es="Entrega de medicamentos">
+
+Livraison de médicaments
+
+</h3>
+
+<p
+data-fr="Livraison rapide et sécurisée."
+data-ar="توصيل سريع وآمن."
+data-en="Fast and safe medicine delivery."
+data-es="Entrega rápida y segura.">
+
+Livraison rapide et sécurisée.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📦</div>
+
+<h3
+data-fr="Colis & Delivery"
+data-ar="الطرود والأمانات"
+data-en="Packages & Parcels"
+data-es="Paquetes y Envíos">
+
+Colis & Delivery
+
+</h3>
+
+<p
+data-fr="Vos colis livrés en toute confiance."
+data-ar="نوصل طرودك وأماناتك بكل ثقة."
+data-en="Your packages delivered with care."
+data-es="Tus paquetes entregados con total confianza.">
+
+Vos colis livrés en toute confiance.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📄</div>
+
+<h3
+data-fr="Express Documents"
+data-ar="الوثائق"
+data-en="Document Delivery"
+data-es="Documentos">
+
+Express Documents
+
+</h3>
+
+<p
+data-fr="Vos documents à destination."
+data-ar="نوصل وثائقك للمكان اللي بغيتي."
+data-en="Your documents delivered safely."
+data-es="Tus documentos entregados a tiempo.">
+
+Vos documents à destination.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SLOGAN -->
+
+<section class="slogan">
+
+<h2>
+
+<span data-fr="Simo" data-ar="Simo" data-en="Simo" data-es="Simo">Simo</span>
+
+<span
+data-fr=" toujours près de vous pour votre livraison"
+data-ar=" ديما قريب منكم"
+data-en=" always near you for delivery"
+data-es=" siempre cerca de ti">
+
+ toujours près de vous pour votre livraison
+
+</span>
+
+</h2>
+
+</section>
+
+
+<!-- MARRAKECH MAP -->
+
+<section class="map-section" id="map">
+
+<div class="title">
+
+<h2
+data-fr="Livraison & Delivery à Marrakech"
+data-ar="التوصيل في مراكش"
+data-en="Delivery in Marrakech"
+data-es="Entrega en Marrakech">
+
+Livraison & Delivery à Marrakech
+
+</h2>
+
+<p
+data-fr="Nous sommes près de vous"
+data-ar="حنا ديما قريبين منكم"
+data-en="We are close to you"
+data-es="Estamos cerca de ti">
+
+Nous sommes près de vous
+
+</p>
+
+</div>
+
+
+<div class="map-box">
+
+<img
+src="file_00000000ab2481f5b854773c6c10e86f.png"
+alt="Simo Pro Delivery - Carte de Marrakech">
+
+</div>
+
+</section>
+
+
+<!-- SEO TEXT -->
+
+<section class="seo-text">
+
+<div class="title">
+
+<h2
+data-fr="Simo Pro Delivery – Best Delivery & Livraison Service in Marrakech"
+data-ar="Simo Pro Delivery – خدمة التوصيل في مراكش"
+data-en="Simo Pro Delivery – Express Delivery Service in Marrakech"
+data-es="Simo Pro Delivery – Servicio de entrega en Marrakech">
+
+Simo Pro Delivery – Best Delivery & Livraison Service in Marrakech
+
+</h2>
+
+</div>
+
+
+<div class="about-box">
+
+<p
+data-fr="Simo Pro Delivery propose un service de livraison (delivery & livraison) rapide et fiable à Marrakech. Nous assurons la livraison de repas, médicaments, documents et colis à domicile."
+data-ar="Simo Pro Delivery توفر خدمة توصيل سريعة وموثوقة في مراكش. نوصل الطعام والأدوية والوثائق والطرود إلى المنازل."
+data-en="Simo Pro Delivery provides fast and reliable delivery service in Marrakech. We deliver meals, pharmacy items, documents, and packages to your doorstep."
+data-es="Simo Pro Delivery ofrece un servicio de entrega rápido y confiable en Marrakech. Entregamos comidas, medicamentos, documentos y paquetes a domicilio.">
+
+Simo Pro Delivery propose un service de livraison (delivery & livraison) rapide et fiable à Marrakech. Nous assurons la livraison de repas, médicaments, documents et colis à domicile.
+
+</p>
+
+
+<br>
+
+
+<p
+data-fr="Delivery Marrakech • Livraison à domicile à Marrakech • Livreur à Marrakech • Service de livraison Marrakech • Express Delivery"
+data-ar="التوصيل للمنازل في مراكش • سائق توصيل في مراكش • خدمة التوصيل في مراكش"
+data-en="Delivery Marrakech • Home delivery in Marrakech • Courier in Marrakech • Marrakech delivery service"
+data-es="Entrega a domicilio en Marrakech • Repartidor en Marrakech • Servicio de entrega Marrakech">
+
+Delivery Marrakech • Livraison à domicile à Marrakech • Livreur à Marrakech • Service de livraison Marrakech • Express Delivery
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="title">
+
+<h2
+data-fr="À propos de nous"
+data-ar="من نحن"
+data-en="About Us"
+data-es="Sobre Nosotros">
+
+À propos de nous
+
+</h2>
+
+</div>
+
+
+<div class="about-box">
+
+<p
+data-fr="Simo Pro Delivery est un service de livraison rapide et fiable à Marrakech. Nous assurons la livraison de repas, documents, colis et médicaments avec professionnalisme."
+data-ar="Simo Pro Delivery هي خدمة توصيل سريعة وموثوقة في مراكش. نوفر توصيل الطعام والوثائق والطرود والأدوية باحترافية وسرعة."
+data-en="Simo Pro Delivery is a fast and reliable delivery service in Marrakech. We handle food, documents, packages, and medicine deliveries professionally."
+data-es="Simo Pro Delivery es un servicio de entrega rápido y confiable en Marrakech. Realizamos envíos de comida, documentos, paquetes y medicamentos de manera profesional.">
+
+Simo Pro Delivery est un service de livraison rapide et fiable à Marrakech. Nous assurons la livraison de repas, documents, colis et médicaments avec professionnalisme.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="title">
+
+<h2
+data-fr="Contactez-nous"
+data-ar="تواصل معنا"
+data-en="Contact Us"
+data-es="Contáctanos">
+
+Contactez-nous
+
+</h2>
+
+<p
+data-fr="Disponible 24/24 et 7/7 pour votre livraison"
+data-ar="متوفرون 24/24 و7/7"
+data-en="Available 24/7 for fast delivery"
+data-es="Disponible 24/7">
+
+Disponible 24/24 et 7/7 pour votre livraison
+
+</p>
+
+</div>
+
+
+<div class="phone">
+
+📞 <a href="tel:+212703394963">0703394963</a>
+
+</div>
+
+
+<a
+class="whatsapp"
+href="https://wa.me/212703394963"
+target="_blank"
+rel="noopener">
+
+💬 WhatsApp
+
+</a>
+
+
+<br>
+
+
+<a
+class="google-review"
+href="https://g.page/r/CdU8NoTJGz4kECE/review"
+target="_blank"
+rel="noopener"
+data-fr="⭐ Évaluez-nous sur Google"
+data-ar="⭐ قيّمنا على Google"
+data-en="⭐ Review us on Google"
+data-es="⭐ Valóranos en Google">
+
+⭐ Évaluez-nous sur Google
+
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+
+© 2026 Simo Pro Delivery — Marrakech
+
+</p>
+
+
+<p
+data-fr="Livraison rapide et professionnelle (Delivery Marrakech)"
+data-ar="توصيل سريع واحترافي"
+data-en="Fast and professional delivery in Marrakech"
+data-es="Entrega rápida y profesional">
+
+Livraison rapide et professionnelle (Delivery Marrakech)
+
+</p>
+
+</footer>
+
+
+<!-- LANGUAGE SCRIPT -->
+
+<script>
+
+function setLang(lang){
+
+  document.documentElement.lang = lang;
+  document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-" + lang + "]").forEach(function(el){
+    el.textContent = el.getAttribute("data-" + lang);
+  });
+
+  const langs = ['fr', 'ar', 'en', 'es'];
+  langs.forEach(function(l){
+    const btn = document.getElementById(l + "Btn");
+    if(btn){
+      btn.classList.toggle("active", lang === l);
+    }
+  });
+
+  localStorage.setItem("language", lang);
+
+}
+
+const savedLang = localStorage.getItem("language") || "fr";
+setLang(savedLang);
+
+</script>
+
+</body>
+
+</html>
